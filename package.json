@@ -8,6 +8,10 @@
         "start": "knex --knexfile=./utils/knexfile.js migrate:latest && node index.js",
         "migrate": "knex --knexfile=./utils/knexfile.js migrate:latest"
     },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/narcosm/UD-OBSERVATORIO-USER.git"
+    },
     "keywords": [
         "planestic",
         "observatorio",
@@ -15,6 +19,10 @@
     ],
     "author": "noe arcos",
     "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/narcosm/UD-OBSERVATORIO-USER/issues"
+    },
+    "homepage": "https://github.com/narcosm/UD-OBSERVATORIO-USER#readme",
     "dependencies": {
         "body-parser": "^1.19.0",
         "cors": "^2.8.5",

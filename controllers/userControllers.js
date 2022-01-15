@@ -58,7 +58,7 @@ userController.updateUser = async (req, res) => {
 
   const errors = isValid(body, user.userSchemaUpdate)
   if (errors.length) {
-    log.error(`updateUsers invalid body `)
+    log.error(`updateUser invalid body `)
     res.status(400).json({ error: errors })
   }
 

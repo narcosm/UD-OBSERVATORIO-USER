@@ -46,7 +46,7 @@ userController.createUser = async (req, res) => {
 
 userController.deleteUser = async (req, res) => {
   const { id } = req.query
-  log.info(`deleteUsers id=${id} `)
+  log.info(`deleteUser id=${id} `)
   const del = await dbQueries.delete('user', id)
   res.json(del)
 }

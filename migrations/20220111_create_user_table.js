@@ -4,6 +4,7 @@ exports.up = function(knex, Promise) {
         table.string('name')
         table.string('email')
         table.string('rol')
+        table.string('img')
         table.timestamp('created_at').defaultTo(knex.fn.now())
         table.timestamp('updated_at').defaultTo(knex.fn.now())
       })

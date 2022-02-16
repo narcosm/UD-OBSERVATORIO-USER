@@ -3,7 +3,7 @@ version: '3'
 services:
    ud-observatorio-user:
      build: .
-     container_name: ud-observatorio-use
+     container_name: ud-observatorio-user
      restart: on-failure
      env_file:
         - .env

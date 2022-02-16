@@ -4,7 +4,8 @@ const usersSchema = {
     'properties': {
         'name': { 'type': 'string' },
         'email':  { 'type': 'string' },
-        'rol':  { 'type': 'string' }
+        'rol':  { 'type': 'string' },
+        'img':  { 'type': 'string' }
     },
     'required': ['name','email', 'rol']
 };
@@ -15,7 +16,8 @@ const usersSchemaUpdate = {
     'properties': {
         'name': { 'type': 'string' },
         'email':  { 'type': 'string' },
-        'rol':  { 'type': 'string' }
+        'rol':  { 'type': 'string' },
+        'img':  { 'type': 'string' }
     },
     'required': ['email']
 };

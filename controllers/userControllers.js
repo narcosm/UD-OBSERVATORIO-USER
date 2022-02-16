@@ -33,7 +33,7 @@ userController.listUsers = async (req, res) => {
 userController.createUser = async (req, res) => {
   const { body } = req;
   log.info(`createUser body=${JSON.stringify(body)} `);
-  const errors = isValid(body, user.userSchema);
+  const errors = isValid(body, user.usersSchema);
   if (errors.length) {
     log.error(`createUser invalid body `);
     res.status(BAD_REQUEST).json({ error: errors });
@@ -56,7 +56,7 @@ userController.updateUser = async (req, res) => {
   const { id } = req.query
   log.info(`updateUser id=${id} body=${JSON.stringify(body)}`)
 
-  const errors = isValid(body, user.userSchemaUpdate)
+  const errors = isValid(body, user.usersSchemaUpdate)
   if (errors.length) {
     log.error(`updateUser invalid body `)
     res.status(400).json({ error: errors })
